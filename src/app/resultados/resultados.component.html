@@ -1,0 +1,12 @@
+<div class="row">
+    <div *ngFor="let item of movie" class="col-md-4 col-sm-6">
+  <div class="card">
+      <img src="{{ item.album.cover }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pelicula: {{ item.title_short }}</h5>
+        <p class="card-text">Tiempo: {{ item.duration/60 }} minutos</p>
+        <a href="#" class="btn btn-primary">Track: {{ item.link }}</a>
+      </div>
+    </div>
+    </div>
+    </div>

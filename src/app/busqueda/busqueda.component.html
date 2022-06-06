@@ -1,0 +1,14 @@
+
+<div class="container mt-3">
+    <div class="input-group mb-3">
+        <input value="Don omar" #buscar type="text" class="form-control" placeholder="Buscar por artista...">
+        <button (click)="searchMusic(buscar)" class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+      </div>
+</div>
+<div class="text-center">
+    <span data-bs-toggle="modal" 
+    data-bs-target="#staticBackdrop" (click)="getTrack(item.id)"  class="badge text-bg-danger" *ngFor="let item of arryNuevoALbum">{{ item }}</span>
+  </div>
+  <br><br>
+
+  <app-resultados [movies]="movies" ></app-resultados>
